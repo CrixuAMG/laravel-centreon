@@ -14,6 +14,8 @@ class Centreon
     private $password;
     private $token;
 
+    const POLLER = 'central';
+
     const ROOT_URI = '/centreon/api/index.php';
     const URL_AUTHENTICATE = '?action=authenticate';
 
