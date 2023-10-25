@@ -2,7 +2,7 @@
     "name": "crixuamg/laravel-centreon",
     "autoload": {
         "psr-4": {
-            "Crixuamg\\LaravelCentreon\\": "src/"
+            "CrixuAMG\\LaravelCentreon\\": "src/"
         }
     },
     "authors": [
