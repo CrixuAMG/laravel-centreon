@@ -64,7 +64,7 @@ class Centreon
     {
         if (!$this->host) throw new CentreonException('Centreon host must be defined');
 
-        return new CentreonClient([
+        return new CentreonClient($this, [
             'base_uri' => $this->host,
         ]);
     }

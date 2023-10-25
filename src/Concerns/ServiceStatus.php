@@ -11,9 +11,6 @@ class ServiceStatus extends CentreonModel
         return $this->centreon
             ->getClient()
             ->fetch(options: [
-                'headers' => [
-                    'centreon-auth-token' => $this->centreon->getToken(),
-                ],
                 'query'   => [
                     'object'   => 'centreon_realtime_services',
                     'action'   => 'list',
