@@ -5,6 +5,7 @@ namespace CrixuAMG\Centreon;
 use CrixuAMG\Centreon\Client\CentreonClient;
 use CrixuAMG\Centreon\Domains\CentreonRestDomain;
 use CrixuAMG\Centreon\Exceptions\CentreonException;
+use CrixuAMG\Centreon\Domains\CentreonCommandLineDomain;
 
 class Centreon
 {
@@ -72,5 +73,10 @@ class Centreon
     public function restApi()
     {
         return new CentreonRestDomain($this);
+    }
+
+    public function commandLineApi()
+    {
+        return new CentreonCommandLineDomain($this);
     }
 }
