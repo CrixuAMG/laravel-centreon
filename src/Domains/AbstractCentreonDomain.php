@@ -6,5 +6,5 @@ use CrixuAMG\Centreon\Centreon;
 
 abstract class AbstractCentreonDomain
 {
-    public function __construct(private Centreon $centreon) { }
+    public function __construct(protected Centreon $centreon) { }
 }
