@@ -1,0 +1,15 @@
+{
+    "name": "crixuamg/laravel-centreon",
+    "autoload": {
+        "psr-4": {
+            "Crixuamg\\LaravelCentreon\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Christian Kaal",
+            "email": "christiankaal@gmail.com"
+        }
+    ],
+    "require": {}
+}
