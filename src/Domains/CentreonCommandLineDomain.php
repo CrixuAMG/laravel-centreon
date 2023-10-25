@@ -2,7 +2,7 @@
 
 namespace CrixuAMG\Centreon\Domains;
 
-class CentreonCommandLineDomain
+class CentreonCommandLineDomain extends AbstractCentreonDomain
 {
 
 }
