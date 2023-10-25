@@ -2,7 +2,7 @@
     "name": "crixuamg/laravel-centreon",
     "autoload": {
         "psr-4": {
-            "CrixuAMG\\LaravelCentreon\\": "src/"
+            "CrixuAMG\\Centreon\\": "src/"
         }
     },
     "authors": [
@@ -11,5 +11,14 @@
             "email": "christiankaal@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "guzzlehttp/guzzle": "^7.8"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CrixuAMG\\Centreon\\CentreonServiceProvider"
+            ]
+        }
+    }
 }
