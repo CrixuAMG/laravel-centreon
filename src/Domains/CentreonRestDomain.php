@@ -8,6 +8,6 @@ class CentreonRestDomain extends AbstractCentreonDomain
 {
     public function serviceStatus()
     {
-        return new ServiceStatus($this->centreon);
+        return $this->instantiate(ServiceStatus::class);
     }
 }

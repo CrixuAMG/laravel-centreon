@@ -3,23 +3,29 @@
 namespace CrixuAMG\Centreon\Domains;
 
 use CrixuAMG\Centreon\Concerns\Host;
-use CrixuAMG\Centreon\Concerns\Server;
 use CrixuAMG\Centreon\Concerns\Service;
+use CrixuAMG\Centreon\Concerns\Contact;
+use CrixuAMG\Centreon\Concerns\ContactGroup;
 
 class CentreonCommandLineDomain extends AbstractCentreonDomain
 {
     public function hosts()
     {
-        return new Host($this->centreon);
+        return $this->instantiate(Host::class);
     }
 
     public function services()
     {
-        return new Service($this->centreon);
+        return $this->instantiate(Service::class);
     }
 
-    public function servers()
+    public function contactGroups()
     {
-        return new Server($this->centreon);
+        return $this->instantiate(ContactGroup::class);
+    }
+
+    public function contacts()
+    {
+        return $this->instantiate(Contact::class);
     }
 }
